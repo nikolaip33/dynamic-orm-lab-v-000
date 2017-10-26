@@ -24,4 +24,8 @@ class InteractiveRecord
     options.each { |k,v| self.send("#{k}=",v) }
   end
 
+  def tabel_name_for_insert
+
+  end
+
 end
