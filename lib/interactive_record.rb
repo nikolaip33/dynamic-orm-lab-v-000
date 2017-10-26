@@ -35,7 +35,7 @@ class InteractiveRecord
   def values_for_insert
     self.class.column_names.map do |col_name|
       "'#{send(col_name)}'"
-    end.flatten.join(", ")
+    end.compact.join(", ")
   end
 
 end
